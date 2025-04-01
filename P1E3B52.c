@@ -32,7 +32,7 @@ int main(void) {
     system("pause");
     system("cls");  //清除畫面上所有文字/元素
     printf("請輸入四位數密碼:\n");
-    int pw = 2025, input;       //密碼預設2025
+    int pw = 2024, input;       //密碼預設2024
     scanf("%d", &input);
     if (input != pw) {
         printf("密碼輸入錯誤\n");
@@ -48,7 +48,7 @@ int main(void) {
     printf("---------------------------\n");
     printf("請輸入一個字元\n");
     char ch;
-    fflush(stdin);
+    fflush(stdin);  //清除緩衝區殘值
     scanf(" %c", &ch); //空一格以避免讀入空值導致程式無法繼續
     if (ch >= 'A' && ch <= 'Z') {
         printf("Uppercase\n");
